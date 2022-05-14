@@ -9873,6 +9873,28 @@ a:link {
   }
 }
 
+@media (max-width: 676px) {
+  .reg-hide {
+    display: none;
+  }
+}
+
+@media (max-width: 776px) {
+  .reg-hide {
+    display: none;
+  }
+}
+@media (max-width: 876px) {
+  .reg-hide {
+    display: none;
+  }
+}
+@media (max-width: 976px) {
+  .reg-hide {
+    display: none;
+  }
+}
+
 /* .bg-in {
   background-image: url("/assets/images/teach-cls.png");
   height: 100%;
