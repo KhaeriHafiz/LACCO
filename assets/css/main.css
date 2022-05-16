@@ -15888,7 +15888,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: max-height 0.3s ease;
   -o-transition: max-height 0.3s ease;
   transition: max-height 0.3s ease;
-  background: #2a383e;
+  background: #0f172a;
 }
 
 .treeview-item {
@@ -17378,4 +17378,20 @@ svg.changeColor path {
   -o-transition: border-left-color 0.3s ease, background-color 0.3s ease;
   transition: border-left-color 0.3s ease, background-color 0.3s ease;
   color: #fff;
+}
+
+/* custom */
+.dash-ic {
+  height: 60px;
+  width: 60px;
+  background-color: #fee2e2;
+  font-size: 2rem;
+  color: #ef4444;
+  border-radius: 50%;
+}
+
+.icoli {
+  margin-top: 13px;
+  margin-bottom: auto;
+  margin-left: 10px;
 }

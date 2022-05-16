@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
   <!-- Font-icon css-->
   <link rel="stylesheet" type="text/css"
-    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <title>LACCO : Dashboard</title>
@@ -63,16 +63,178 @@
   <!-- Sidebar menu-->
   <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
   <aside class="app-sidebar">
-    <span class="ape-gene"><i class="bi bi-house-door mr-2"></i>Home</span>
-    <ul class="app-menu">
+    <a href="#">
+      <span class="ape-gene"><i class="app-menu__icon bi bi-house-door mr-2"></i>Home</span>
+    </a>
+    <ul class="app-menu" style="font-size: 12px">
+      <!--  -->
+      <span class="ape-gene" style="color:#F87171;"><i class="app-menu__icon fa-solid fa-bars mr-2"></i><b>MAIN
+          MENU</b>
+      </span>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Member</span></a>
+      </li>
+      <li class="treeview"><a class="app-menu__item fo-col" href="#" data-toggle="treeview"><span
+            class="app-menu__label">Member Registration</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+        <ul class="treeview-menu">
+          <li>
+            <a class="treeview-item" href="#">#</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Program History</span></a>
+      </li>
+      <!--  -->
+      <span class="ape-gene" style="color:#F87171;"><i class="app-menu__icon fa-solid fa-bars mr-2"></i><b>MASTER
+          DATA</b>
+      </span>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Package</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Program</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Camp</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Tutor</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">User</span></a>
+      </li>
+      <!--  -->
+      <span class="ape-gene" style="color:#F87171;"><i class="app-menu__icon fa-solid fa-bars mr-2"></i><b>REPORTING</b>
+      </span>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Registration</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Program Report</span></a>
+      </li>
+      <li>
+        <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Grading</span></a>
+      </li>
 
-      <li><a class="app-menu__item fo-col" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span
-            class="app-menu__label">Dashboard</span></a></li>
     </ul>
   </aside>
   <main class="app-content">
-
-
+    <div class="row">
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <i class="icoli fa-solid fa-user-check"></i>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Verified member</h5>
+                <h3>346</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <i class="icoli fa-solid fa-user-xmark"></i>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Non-verified member</h5>
+                <h3>768</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <i class="icoli fa-solid fa-users"></i>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Members total</h5>
+                <h3>1482</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <div class="ml-2">
+                  <i class="icoli fa-solid fa-clipboard-list"></i>
+                </div>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Programs</h5>
+                <h3>14</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <div class="ml-2">
+                  <i class="icoli fa-solid fa-user-tie"></i>
+                </div>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Tutor</h5>
+                <h3>24</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex">
+              <div class="dash-ic rounded-circle">
+                <i class="icoli fa-solid fa-users"></i>
+              </div>
+              <div class="ml-5">
+                <h5 style="color: #64748B;">Users</h5>
+                <h3>1532</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- chart -->
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="tile">
+          <h3 class="tile-title">Line Chart</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+            <canvas class="embed-responsive-item" id="lineChartDemo"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tile">
+          <h3 class="tile-title">Bar Chart</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+            <canvas class="embed-responsive-item" id="barChartDemo"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- Essential javascripts for application to work-->
   <script src="/assets/js/dash/jquery-3.3.1.min.js"></script>
@@ -82,7 +244,107 @@
 
   <!-- Page specific javascripts-->
   <script type="text/javascript" src="/assets/js/dash/plugins/chart.js"></script>
+  <script type="text/javascript">
+    var data = {
+      labels: ["2018", "2019", "2020", "2021", "2020"],
+      datasets: [
+        {
+          label: "My First dataset",
+          fillColor: "rgba(220,220,220,0.2)",
+          strokeColor: "rgba(239, 68, 68)",
+          pointColor: "rgba(239, 68, 68)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [65, 59, 80, 81, 56]
+        },
+        // {
+        //   label: "My Second dataset",
+        //   fillColor: "rgba(151,187,205,0.2)",
+        //   strokeColor: "rgba(151,187,205,1)",
+        //   pointColor: "rgba(151,187,205,1)",
+        //   pointStrokeColor: "#fff",
+        //   pointHighlightFill: "#fff",
+        //   pointHighlightStroke: "rgba(151,187,205,1)",
+        //   data: [28, 48, 40, 19, 86]
+        // }
+      ]
+    };
+    var pdata = [
+      {
+        value: 300,
+        color: "#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+      },
+      {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+      },
+      {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+      }
+    ]
 
+    var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+    var lineChart = new Chart(ctxl).Line(data);
+  </script>
+  <script type="text/javascript">
+    var data = {
+      labels: ["2018", "2019", "2020", "2021", "2020"],
+      datasets: [
+        {
+          label: "My First dataset",
+          fillColor: "rgba(239, 68, 68)",
+          strokeColor: "rgba(239, 68, 68)",
+          pointColor: "rgba(239, 68, 68)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [65, 59, 80, 81, 56]
+        },
+        // {
+        //   label: "My Second dataset",
+        //   fillColor: "rgba(151,187,205,0.2)",
+        //   strokeColor: "rgba(151,187,205,1)",
+        //   pointColor: "rgba(151,187,205,1)",
+        //   pointStrokeColor: "#fff",
+        //   pointHighlightFill: "#fff",
+        //   pointHighlightStroke: "rgba(151,187,205,1)",
+        //   data: [28, 48, 40, 19, 86]
+        // }
+      ]
+    };
+    var pdata = [
+      {
+        value: 300,
+        color: "#F7464A",
+        highlight: "#FF5A5E",
+        label: "Red"
+      },
+      {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+      },
+      {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Yellow"
+      }
+    ]
+
+
+    var ctxb = $("#barChartDemo").get(0).getContext("2d");
+    var barChart = new Chart(ctxb).Bar(data);
+  </script>
 </body>
 
 </html>
