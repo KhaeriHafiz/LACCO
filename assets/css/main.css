@@ -3553,7 +3553,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: 19rem;
   padding: 0 0;
   margin: 0 0 0;
   font-size: 0.875rem;
@@ -15614,15 +15614,29 @@ be a descendant of the grid when it is being dragged.
   padding: 15px;
   line-height: 20px;
   color: #fff;
-  -webkit-transition: background-color 0.3s ease;
+  /* background-color: #dc2626; */
+  /* -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; */
 }
 
-.app-nav__item:hover,
+.nav-heading {
+  background-color: #dc2626;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 0.75rem;
+}
+
+/* .app-nav__item:hover,
 .app-nav__item:focus {
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6;
+} */
+
+.nav-heading:hover,
+.nav-heading:focus {
+  background-color: #8c1818;
+  color: #adaaaa;
 }
 
 .app-search {
@@ -16007,7 +16021,7 @@ be a descendant of the grid when it is being dragged.
 }
 
 .dropdown-menu {
-  border-radius: 0;
+  /* border-radius: 0; */
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -17394,4 +17408,60 @@ svg.changeColor path {
   margin-top: 13px;
   margin-bottom: auto;
   margin-left: 10px;
+}
+
+.img-round {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.button-hell {
+  background-color: #dc2626;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0.75rem;
+  color: #fff;
+}
+
+.button-hell:hover {
+  background-color: #ba1c1c;
+  color: #c9c7c7;
+}
+
+.button-helldit {
+  background-color: #14b8a6;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0.75rem;
+  color: #fff;
+}
+
+.button-helldit:hover {
+  background-color: #119c8c;
+  color: #c9c7c7;
+}
+
+.button-hellprint {
+  background-color: #334155;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0.75rem;
+  color: #fff;
+}
+
+.button-hellprint:hover {
+  background-color: #1f2a38;
+  color: #c9c7c7;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.st-veri {
+  color: #0EA5E9;
+}
+
+.st-noveri {
+  color: #EF4444;
 }
