@@ -17454,6 +17454,19 @@ svg.changeColor path {
   color: #c9c7c7;
 }
 
+.button-veri {
+  background-color: #0EA5E9;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0.75rem;
+  color: #fff;
+}
+
+.button-veri:hover {
+  background-color: #0978ab;
+  color: #c9c7c7;
+}
+
 a:link {
   text-decoration: none;
 }

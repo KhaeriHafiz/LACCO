@@ -139,8 +139,7 @@
             </li>
             <li>
                 <a class="app-menu__item fo-col" href="dashboard-Program_history.html"><span
-                        class="app-menu__label">Program
-                        History</span></a>
+                        class="app-menu__label">Program History</span></a>
             </li>
             <!--  -->
             <span class="ape-gene" style="color:#F87171;"><i class="app-menu__icon fa-solid fa-bars mr-2"></i><b>MASTER
@@ -155,16 +154,13 @@
                         class="app-menu__label">Program</span></a>
             </li>
             <li>
-                <a class="app-menu__item fo-col" href="dashboard-Camp.html"><span
-                        class="app-menu__label">Camp</span></a>
+                <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Camp</span></a>
             </li>
             <li>
-                <a class="app-menu__item fo-col" href="dashboard-Tutor.html"><span
-                        class="app-menu__label">Tutor</span></a>
+                <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">Tutor</span></a>
             </li>
             <li>
-                <a class="app-menu__item fo-col" href="dashboard-User.html"><span
-                        class="app-menu__label">User</span></a>
+                <a class="app-menu__item fo-col" href="#"><span class="app-menu__label">User</span></a>
             </li>
             <!--  -->
             <span class="ape-gene" style="color:#F87171;"><i
@@ -229,16 +225,26 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <div class="dash-ic rounded-circle">
+                                <div class="ml-2">
+                                    <i class="icoli fa-solid fa-clipboard-list"></i>
+                                </div>
+                            </div>
+                            <div class="ml-5">
+                                <h5 style="color: #64748B;">Programs</h5>
+                                <h3>14</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- button -->
         <div class="row mt-2">
-            <div class="col-md-2 mt-2">
-                <a href="#modal" type="button" data-toggle="modal" data-target="#addmember">
-                    <div class="button-hell text-center">
-                        <i class="fa-solid fa-circle-plus mr-2"></i>Add Member
-                    </div>
-                </a>
-            </div>
             <div class="col-md-2 mt-2">
                 <a href="#modal" type="button" data-toggle="modal" data-target="#editmember">
                     <div class="button-helldit text-center">
@@ -255,12 +261,12 @@
             </div>
         </div>
         <!-- table -->
-        <h4 class="mt-4"><b>Member List</b></h4>
+        <h4 class="mt-4"><b>Registration</b></h4>
         <div class="row mt-2 mb-4">
             <div class="col-md-2 mt-2">
                 <div class="input-group">
                     <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Filter by Program</option>
+                        <option selected>Filter by Period</option>
                         <option value="1">#</option>
                     </select>
                 </div>
@@ -290,44 +296,35 @@
                         <thead>
                             <tr>
                                 <th>Number</th>
-                                <th>Name</th>
-                                <th>Member Code</th>
-                                <th>Phone Number</th>
-                                <th>Trustee</th>
-                                <th>Trustee Phone Number</th>
-                                <th>Package</th>
-                                <th>Program</th>
-                                <th>Camp</th>
-                                <th>Camp Room</th>
-                                <th>Status</th>
+                                <th>ID User</th>
+                                <th>Full Name</th>
+                                <th>USername</th>
+                                <th>Password</th>
+                                <th>Level</th>
+                                <th>Date</th>
+                                <th>Time</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Kamar</td>
-                                <td>02056743</td>
-                                <td>081xxxxxxxxx</td>
-                                <td>Udin</td>
-                                <td>082xxxxxxxxx</td>
-                                <td>Package</td>
-                                <td>AFEC</td>
-                                <td>6</td>
-                                <td>13</td>
-                                <td class="st-veri">Verified</td>
+                                <td>21020497</td>
+                                <td>Siren Petrik</td>
+                                <td>SIP</td>
+                                <td>******</td>
+                                <td>Admin</td>
+                                <td>18/21/21</td>
+                                <td>10:00</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Jamal</td>
-                                <td>02056743</td>
-                                <td>081xxxxxxxxx</td>
-                                <td>Udin</td>
-                                <td>082xxxxxxxxx</td>
-                                <td>Package</td>
-                                <td>AFEC</td>
-                                <td>7</td>
-                                <td>4</td>
-                                <td class="st-noveri">Non-Verified</td>
+                                <td>21020497</td>
+                                <td>Siren Petrik</td>
+                                <td>SIP</td>
+                                <td>******</td>
+                                <td>Admin</td>
+                                <td>18/21/21</td>
+                                <td>10:00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -337,216 +334,6 @@
 
     </main>
 
-    <!-- ============================================================================================================ -->
-    <!-- modal add member -->
-    <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="addmemberLabel"><b>Add Member</b></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Member Code</b></label>
-                                <input type="text" class="form-control" placeholder="~Type your member code.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Full Name</b></label>
-                                <input type="text" class="form-control" placeholder="Type your full name here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Gender</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your gender</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Address</b></label>
-                                <input type="text" class="form-control" placeholder="Type your address here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Birthplace</b></label>
-                                <input type="text" class="form-control" placeholder="Type your birthplace here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Birthdate</b></label>
-                                <input type="text" class="form-control" data-provide="datepicker"
-                                    placeholder="Choose your birthdate.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Package</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your package</option>
-                                        <option value="1">#</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Program Duration</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your program duration.</option>
-                                        <option value="1">#</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Camp</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your camp.</option>
-                                        <option value="1">#</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Camp Room</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your camp room.</option>
-                                        <option value="1">#</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Arival Date</b></label>
-                                <input type="text" class="form-control" data-provide="datepicker"
-                                    placeholder="Choose your arival date.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label for="exampleInputEmail1"><b>Last Education</b></label>
-                                <div class="input-group">
-                                    <select class="custom-select" id="inputGroupSelect01">
-                                        <option selected>Choose your last education.</option>
-                                        <option value="1">#</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>E-mail</b></label>
-                                <input type="text" class="form-control" placeholder="Type your e-mail here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Phone Number</b></label>
-                                <input type="text" class="form-control" placeholder="Type your phone number here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Mother's Name</b></label>
-                                <input type="text" class="form-control" placeholder="Type your mother name here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Father's Name</b></label>
-                                <input type="text" class="form-control" placeholder="Type your father's namehere.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Emergency Number</b></label>
-                                <input type="text" class="form-control" placeholder="Type your address here.">
-                            </div>
-                            <!-- auth -->
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Username</b></label>
-                                <input type="text" class="form-control" placeholder="Type your username here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Password</b></label>
-                                <input type="password" class="form-control" placeholder="Type your password here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <label><b>Re-enter Password</b></label>
-                                <input type="password" class="form-control" placeholder="Type your password here.">
-                            </div>
-                            <div class="col-md-6 col-xs-12 mt-1">
-                                <div class="mt-2">
-                                    <a href="#">
-                                        <div class="button-hell text-center">
-                                            Add Member
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- end modal add member -->
-
-    <!-- modal Edit Member -->
-    <div class="modal fade" id="editmember" tabindex="-1" aria-labelledby="editmemberLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editmemberLabel"><b>Edit Member</b></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="table-responsive">
-                        <table class="table" id="table-goblok">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Number</th>
-                                    <th>Name</th>
-                                    <th>Member Code</th>
-                                    <th>Phone Number</th>
-                                    <th>Trustee</th>
-                                    <th>Trustee Phone Number</th>
-                                    <th>Package</th>
-                                    <th>Program</th>
-                                    <th>Camp</th>
-                                    <th>Camp Room</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Kamar</td>
-                                    <td>02056743</td>
-                                    <td>081xxxxxxxxx</td>
-                                    <td>Udin</td>
-                                    <td>082xxxxxxxxx</td>
-                                    <td>Package</td>
-                                    <td>AFEC</td>
-                                    <td>6</td>
-                                    <td>13</td>
-                                    <td class="st-veri">Verified</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Jamal</td>
-                                    <td>02056743</td>
-                                    <td>081xxxxxxxxx</td>
-                                    <td>Udin</td>
-                                    <td>082xxxxxxxxx</td>
-                                    <td>Package</td>
-                                    <td>AFEC</td>
-                                    <td>7</td>
-                                    <td>4</td>
-                                    <td class="st-noveri">Non-Verified</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end modal edit member -->
-    <!-- ============================================================================================================ -->
 
     <!-- Essential javascripts for application to work-->
     <script src="../../assets/js/dash/jquery-3.3.1.min.js"></script>
@@ -562,81 +349,7 @@
     <script type="text/javascript" src="../../assets/js/dash/plugins/bootstrap-datepicker.min.js"></script>
 
 
-    <!-- data table -->
-    <script type="text/javascript">$('#table-goblok').DataTable();</script>
 
-    <!-- datepicker -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datepicker').datepicker();
-            "format" = "mm-dd-yy",
-                "startDate" = "-5d",
-                "endDate" = "09-15-2017",
-                "keyboardNavigation" = false
-        });
-    </script>
-
-
-    <!-- data table edit -->
-    <script>
-        var table = document.getElementById('table-goblok');
-        var cells = table.getElementsByTagName('td');
-
-        for (var i = 0; i < cells.length; i++) {
-            cells[i].onclick = function () {
-                if (this.hasAttribute('data-clicked')) {
-                    return;
-                }
-                this.setAttribute('data-clicked', 'yes');
-                this.setAttribute('data-text', this.innerHTML);
-
-                var input = document.createElement('input');
-                input.setAttribute('type', 'text');
-                input.value = this.innerHTML;
-                // input.style.width = this.offsetWidth - (this.clientLeft * 2) + "px";
-                // input.style.height = this.offsetHeight - (this.clientTop * 2) + "px";
-                // input.style.boder = "0px";
-                // input.style.fontFamily = "inherit";
-                // input.style.fontSize = "inherit";
-                // input.style.fontAlign = "inherit";
-                // input.style.backgroundColor = "lightGoldenRodYellow";
-
-                input.onblur = function () {
-                    var td = input.parentElement;
-                    var orig_text = input.parentElement.getAttribute('data-text');
-                    var current_text = this.value;
-
-                    if (orig_text != current_text) {
-                        //ada perubahan text
-                        // save ke database
-                        td.removeAttribute('data-clicked');
-                        td.removeAttribute('data-text');
-                        td.innerHTML = current_text;
-                        td.style.cssText = 'padding: 0.75rem';
-                        console.log(orig_text + ' di ganti dengan ' + current_text);
-                    } else {
-                        td.removeAttribute('data-clicked');
-                        td.removeAttribute('data-text');
-                        td.innerHTML = orig_text;
-                        td.style.cssText = 'padding: 0.75rem';
-                        console.log('Ga ada Perubahan');
-                    }
-
-                }
-
-                input.onkeypress = function () {
-                    if (event.keyCode == 13) {
-                        this.blur();
-                    }
-                }
-
-                this.innerHTML = '';
-                this.style.cssText = 'padding: 0px, 0px';
-                this.append(input);
-                this.firstElementChild.select();
-            }
-        }
-    </script>
 </body>
 
 </html>
