@@ -284,7 +284,7 @@
                                 <td>18:00</td>
                                 <td>ABC123</td>
                                 <td>2022</td>
-                                <td class="st-veri">Verified</td>
+                                <td class="st-veri">Done</td>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -296,7 +296,7 @@
                                 <td>18:00</td>
                                 <td>ABC123</td>
                                 <td>2022</td>
-                                <td class="st-noveri">Non-Verified</td>
+                                <td class="st-noveri">On-Going</td>
                             </tr>
                         </tbody>
                     </table>
@@ -305,6 +305,85 @@
         </div>
 
     </main>
+
+    <!-- ================================================================================================= -->
+    <!-- modal add member -->
+    <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addmemberLabel"><b>Add Program</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>ID Riwayat</b></label>
+                                <input type="text" class="form-control" placeholder="ID Riwayat">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Member Code</b></label>
+                                <input type="text" class="form-control" placeholder="Member code">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>ID Program</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose ID</option>
+                                        <option value="1">#</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Certificate</b></label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Upload from local (Max. file size
+                                        2MB)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Id User</b></label>
+                                <input type="text" class="form-control" placeholder="ID User">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Periode</b></label>
+                                <input type="text" class="form-control" placeholder="Periode">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>Status</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose Status</option>
+                                        <option value="1">On Going</option>
+                                        <option value="2">Done</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <div class="mt-2">
+                                    <a href="#">
+                                        <div class="button-hell text-center">
+                                            Add Program
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal add member -->
+
+    <!-- ================================================================================================= -->
 
 
     <!-- Essential javascripts for application to work-->

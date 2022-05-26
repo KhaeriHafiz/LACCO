@@ -188,7 +188,7 @@
             <div class="col-md-2 mt-2">
                 <a href="#modal" type="button" data-toggle="modal" data-target="#addmember">
                     <div class="button-hell text-center">
-                        <i class="fa-solid fa-circle-plus mr-2"></i>Add Member
+                        <i class="fa-solid fa-circle-plus mr-2"></i>Add Package
                     </div>
                 </a>
             </div>
@@ -277,6 +277,59 @@
         </div>
 
     </main>
+
+    <!-- ================================================================================================= -->
+    <!-- modal add member -->
+    <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addmemberLabel"><b>Add Package</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>ID Package</b></label>
+                                <input type="text" class="form-control" placeholder="ID Package">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Package Name</b></label>
+                                <input type="text" class="form-control" placeholder="Package Name">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Price</b></label>
+                                <input type="text" class="form-control" placeholder="Price">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>ID User</b></label>
+                                <input type="text" class="form-control" placeholder="ID User">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <div class="mt-2">
+                                    <a href="#">
+                                        <div class="button-hell text-center">
+                                            Add Package
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal add member -->
+
+    <!-- ================================================================================================= -->
 
 
     <!-- Essential javascripts for application to work-->

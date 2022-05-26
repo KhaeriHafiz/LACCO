@@ -485,7 +485,7 @@
 
     <!-- modal Edit Member -->
     <div class="modal fade" id="editmember" tabindex="-1" aria-labelledby="editmemberLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="editmemberLabel"><b>Edit Member</b></h5>
@@ -523,7 +523,15 @@
                                     <td>AFEC</td>
                                     <td>6</td>
                                     <td>13</td>
-                                    <td class="st-veri">Verified</td>
+                                    <th>
+                                        <div class="input-group">
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Status</option>
+                                                <option value="1" class="st-veri">Verified</option>
+                                                <option value="1" class="st-noveri">Non-Verified</option>
+                                            </select>
+                                        </div>
+                                    </th>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -536,7 +544,15 @@
                                     <td>AFEC</td>
                                     <td>7</td>
                                     <td>4</td>
-                                    <td class="st-noveri">Non-Verified</td>
+                                    <th>
+                                        <div class="input-group">
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>Status</option>
+                                                <option value="1" class="st-veri">Verified</option>
+                                                <option value="1" class="st-noveri">Non-Verified</option>
+                                            </select>
+                                        </div>
+                                    </th>
                                 </tr>
                             </tbody>
                         </table>
