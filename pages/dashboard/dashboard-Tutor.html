@@ -249,7 +249,7 @@
                                 <th>ID Tutor</th>
                                 <th>Tutor Name</th>
                                 <th>Address</th>
-                                <th>Image</th>
+                                <th>Photo</th>
                                 <th>WA Number</th>
                                 <th>Email</th>
                                 <th>Camp ID</th>
@@ -289,6 +289,75 @@
         </div>
 
     </main>
+
+    <!-- ================================================================================================= -->
+    <!-- modal add member -->
+    <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addmemberLabel"><b>Add Tutor</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>ID Tutors</b></label>
+                                <input type="text" class="form-control" placeholder="ID Tutor">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>ID Name</b></label>
+                                <input type="text" class="form-control" placeholder="ID Name">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Address</b></label>
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Photo</b></label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Upload from local (Max. file size
+                                        2MB)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Whatsapp Number</b></label>
+                                <input type="text" class="form-control" placeholder="Whatsapp Number">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>E-Mail</b></label>
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Camp ID</b></label>
+                                <input type="text" class="form-control" placeholder="Camp ID">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <div class="mt-2">
+                                    <a href="#">
+                                        <div class="button-hell text-center">
+                                            Add Tutor
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal add member -->
+
+    <!-- ================================================================================================= -->
 
 
     <!-- Essential javascripts for application to work-->
