@@ -181,70 +181,7 @@
         </ul>
     </aside>
     <main class="app-content">
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-user-check"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Verified member</h5>
-                                <h3>346</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-user-xmark"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Non-verified member</h5>
-                                <h3>768</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-users"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Members total</h5>
-                                <h3>1482</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <div class="ml-2">
-                                    <i class="icoli fa-solid fa-clipboard-list"></i>
-                                </div>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Programs</h5>
-                                <h3>14</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- button -->
         <div class="row mt-2">
             <div class="col-md-2 mt-2">
@@ -275,23 +212,15 @@
             <div class="col-md-2 mt-2">
                 <div class="input-group">
                     <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Filter by Duration</option>
+                        <option value="1">#</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 mt-2">
+                <div class="input-group">
+                    <select class="custom-select" id="inputGroupSelect01">
                         <option selected>Filter by Period</option>
-                        <option value="1">#</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-2 mt-2">
-                <div class="input-group">
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Filter by Status</option>
-                        <option value="1">#</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-md-2 mt-2">
-                <div class="input-group">
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Filter by Package</option>
                         <option value="1">#</option>
                     </select>
                 </div>
@@ -305,14 +234,12 @@
                         <thead>
                             <tr>
                                 <th>Number</th>
-                                <th>Member Code</th>
-                                <th>Full Name</th>
-                                <th>Phone Number</th>
-                                <th>Package</th>
-                                <th>Pogram</th>
-                                <th>Period</th>
-                                <th>Camp</th>
-                                <th>Status</th>
+                                <th>ID Program</th>
+                                <th>Program Name</th>
+                                <th>Duration</th>
+                                <th>Periode</th>
+                                <th>Date</th>
+                                <th>Time</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -320,23 +247,19 @@
                                 <td>1</td>
                                 <td>21020497</td>
                                 <td>Siren Petrik</td>
-                                <td>093xxxxxxxxx</td>
-                                <td>Non-Package</td>
                                 <td>1 Month</td>
                                 <td>2021</td>
-                                <td>5</td>
-                                <td class="st-veri">Verified</td>
+                                <td>25/5/2021</td>
+                                <td>15:43</td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>21020497</td>
                                 <td>Siren Petrik</td>
-                                <td>093xxxxxxxxx</td>
-                                <td>Non-Package</td>
                                 <td>1 Month</td>
                                 <td>2021</td>
-                                <td>5</td>
-                                <td class="st-noveri">Non-Verified</td>
+                                <td>25/5/2021</td>
+                                <td>15:43</td>
                             </tr>
                         </tbody>
                     </table>
