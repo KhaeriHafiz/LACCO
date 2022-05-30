@@ -182,72 +182,16 @@
         </ul>
     </aside>
     <main class="app-content">
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-user-check"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Verified member</h5>
-                                <h3>346</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-user-xmark"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Non-verified member</h5>
-                                <h3>768</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <i class="icoli fa-solid fa-users"></i>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Members total</h5>
-                                <h3>1482</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12 mt-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <div class="dash-ic rounded-circle">
-                                <div class="ml-2">
-                                    <i class="icoli fa-solid fa-clipboard-list"></i>
-                                </div>
-                            </div>
-                            <div class="ml-5">
-                                <h5 style="color: #64748B;">Programs</h5>
-                                <h3>14</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- button -->
         <div class="row mt-2">
+            <div class="col-md-2 mt-2">
+                <a href="#modal" type="button" data-toggle="modal" data-target="#addmember">
+                    <div class="button-hell text-center">
+                        <i class="fa-solid fa-circle-plus mr-2"></i>Add Grade
+                    </div>
+                </a>
+            </div>
             <div class="col-md-2 mt-2">
                 <a href="#modal" type="button" data-toggle="modal" data-target="#editmember">
                     <div class="button-helldit text-center">
@@ -284,7 +228,7 @@
             <div class="col-md-2 mt-2">
                 <div class="input-group">
                     <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Filter by Status</option>
+                        <option selected>Filter by Program</option>
                         <option value="1">#</option>
                     </select>
                 </div>
@@ -292,7 +236,7 @@
             <div class="col-md-2 mt-2">
                 <div class="input-group">
                     <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Filter by Package</option>
+                        <option selected>Filter by Camp</option>
                         <option value="1">#</option>
                     </select>
                 </div>
@@ -306,38 +250,41 @@
                         <thead>
                             <tr>
                                 <th>Number</th>
-                                <th>Member Code</th>
+                                <th>Gender</th>
                                 <th>Full Name</th>
-                                <th>Phone Number</th>
-                                <th>Package</th>
-                                <th>Pogram</th>
-                                <th>Period</th>
+                                <th>Program</th>
+                                <th>Grade</th>
+                                <th>Certificate</th>
                                 <th>Camp</th>
-                                <th>Status</th>
+                                <th>Added by</th>
+                                <th>Date</th>
+                                <th>Time</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>21020497</td>
-                                <td>Siren Petrik</td>
-                                <td>093xxxxxxxxx</td>
-                                <td>Non-Package</td>
-                                <td>1 Month</td>
-                                <td>2021</td>
-                                <td>5</td>
-                                <td class="st-veri">Verified</td>
+                                <td>Male</td>
+                                <td>Emil</td>
+                                <td>PROG2020</td>
+                                <td>Excelent</td>
+                                <td>STO22-2503-0011</td>
+                                <td>4</td>
+                                <td>Admin</td>
+                                <td>12/02/2020</td>
+                                <td>17:50</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>21020497</td>
-                                <td>Siren Petrik</td>
-                                <td>093xxxxxxxxx</td>
-                                <td>Non-Package</td>
-                                <td>1 Month</td>
-                                <td>2021</td>
-                                <td>5</td>
-                                <td class="st-noveri">Non-Verified</td>
+                                <td>Male</td>
+                                <td>Emil</td>
+                                <td>PROG2020</td>
+                                <td>Excelent</td>
+                                <td>STO22-2503-0011</td>
+                                <td>4</td>
+                                <td>Admin</td>
+                                <td>12/02/2020</td>
+                                <td>17:50</td>
                             </tr>
                         </tbody>
                     </table>
@@ -346,6 +293,112 @@
         </div>
     </main>
 
+    <!-- ================================================================================================= -->
+    <!-- modal add member -->
+    <div class="modal fade" id="addmember" tabindex="-1" aria-labelledby="addmemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addmemberLabel"><b>Add Grade</b></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fa-solid fa-xmark" style=color:#DC2626;></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Member Code</b></label>
+                                <input type="text" class="form-control" placeholder="Membe Code">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Full Name</b></label>
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>Gender</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose your gender</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>ID Program</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose ID</option>
+                                        <option value="1">#</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Ceertificate</b></label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Upload from local (Max. file size
+                                        2MB)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label><b>Photo</b></label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Upload from local (Max. file size
+                                        2MB)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>Class</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose Class</option>
+                                        <option value="1">#</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>Grade</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose Grade</option>
+                                        <option value="1">#</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <label for="exampleInputEmail1"><b>Period</b></label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Choose Period</option>
+                                        <option value="1">#</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 mt-1">
+                                <div class="mt-2">
+                                    <a href="#">
+                                        <div class="button-hell text-center">
+                                            Add Tutor
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end modal add member -->
+
+    <!-- ================================================================================================= -->
 
     <!-- Essential javascripts for application to work-->
     <script src="../../assets/js/dash/jquery-3.3.1.min.js"></script>
