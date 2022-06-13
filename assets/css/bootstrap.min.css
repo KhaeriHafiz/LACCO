@@ -9904,3 +9904,17 @@ a:link {
 .bor-heheh {
   border-radius: 0.75rem;
 }
+
+.scroll {
+  max-height: 100;
+  overflow-y: auto;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.logo-ba {
+  display: flex;
+  margin-left: auto;
+}
